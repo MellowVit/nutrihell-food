@@ -18,6 +18,8 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu' # Alternative distribution options are available.
+      - name: Set up Maven settings for CI
+        run: cp .github/maven/settings.xml ~/.m2/settings.xml
       - name: Cache SonarQube packages
         uses: actions/cache@v4
         with:
