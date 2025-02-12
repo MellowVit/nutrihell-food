@@ -18,10 +18,6 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu' # Alternative distribution options are available.
-      - name: Debug settings.xml
-        run: ls -l ~/.m2/settings.xml && cat ~/.m2/settings.xml
-      - name: Set up Maven settings for CI
-        run: cp .github/maven/settings.xml ~/.m2/settings.xml
       - name: Cache SonarQube packages
         uses: actions/cache@v4
         with:
@@ -37,4 +33,4 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify sonar:sonar -Dsonar.projectKey=MellowVit_nutrihell-food
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=MellowVit_nutrihell-food
