@@ -1,4 +1,4 @@
-package com.mellowvit.nutrihell.nutri_hell_food;
+package com.mellowvit.nutrihell.food;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
