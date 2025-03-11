@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.mellowvit.nutrihell.nutri-hell-food' is invalid and this project uses 'com.mellowvit.nutrihell.nutri_hell_food' instead.
+* The original package name 'com.mellowvit.nutrihell.nutri-hell-food' is invalid and this project uses 'com.mellowvit.nutrihell.food' instead.
 
 # Getting Started
 
